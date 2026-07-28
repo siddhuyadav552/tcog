@@ -364,22 +364,23 @@
 
                     <div class="contact-pill">Contact us</div>
 
-                    <form action="https://formspree.io/f/mkodkqdp" method="POST">
-                        <div class="field">
-                            <input type="text" name="name" placeholder="Your full name" required>
-                        </div>
-                        <div class="field">
-                            <input type="email" name="email" placeholder="you@company.com" required>
-                        </div>
-                        <div class="field">
-                            <input type="text" name="company" placeholder="Company name">
-                        </div>
-                        <div class="field field-message">
-                            <textarea name="message" placeholder="Tell us about your project..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn-send">Send Message</button>
-                        <p class="privacy">By submitting, you agree to our Privacy Policy.</p>
+                    <form name="contact-form" method="POST" data-netlify="true">
+    <div class="field">
+        <input type="text" name="name" placeholder="Your full name" required>
+    </div>
+    <div class="field">
+        <input type="email" name="email" placeholder="you@company.com" required>
+    </div>
+    <div class="field">
+        <input type="text" name="company" placeholder="Company name">
+    </div>
+    <div class="field field-message">
+        <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+    </div>
+    <button type="submit" class="btn-send">Send Message</button>
+    <p class="privacy">By submitting, you agree to our Privacy Policy.</p>
                     </form>
+                    
                 </div>
             </div>
         </div>
